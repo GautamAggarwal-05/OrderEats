@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="React.css">
+    <title>Reactjs 1</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="nesting"></div>
+    <div id="sibling"></div>
+    <div id="mess">
+        <!-- THIS LINE (EVERYTHING) WILL BE REPLACED BY WHATEVER render() WILL SEND  -->
+        <h1>Gautam is here !</h1>
+    </div>
+
+        <!-- WE DONT NEED LINKS NOW SINCE WE npm i react
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+
+<!-- IT will generate error that  Browser scripts cannot have imports or exports. Because normal js dont have import in it 
+We have to tell browser that its not a normal js file  -->
+<script  type="module"  src="App.js"></script>
+</body>
+</html>
