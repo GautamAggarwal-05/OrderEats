@@ -1,31 +1,3 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "Backend/proxyserver.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "FoodOrdering.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "src/**/*",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "Backend/proxyserver.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/FoodOrdering.html"
-      }
-    ],
-    "installCommand": "npm install --legacy-peer-deps",
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist"
-  }
-  
+    "rewrites": [{"source":"/(.*)", "destination": "/FoodOrdering.html"}]
+}

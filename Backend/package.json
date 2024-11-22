@@ -1,0 +1,23 @@
+{
+    "name": "backend-proxyserver",
+    "version": "1.0.0",
+    "description": "Proxy server for frontend API requests",
+    "main": "proxyserver.js",
+    "scripts": {
+      "start": "node proxyserver.js",
+      "dev": "nodemon proxyserver.js"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.19.2",
+      "http-proxy-middleware": "^3.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.7"
+    },
+    "engines": {
+      "node": "16.x"
+    },
+    "license": "ISC"
+  }
+  
