@@ -5,9 +5,7 @@
   "scripts": {
     "start": "parcel  FoodOrdering.html",
     "build": "parcel build FoodOrdering.html",
-    "test": "jest",
-    "server": "nodemon Backend/proxyserver.js",
-    "dev": "concurrently \"npm run server\" \"npm run start\""
+    "test": "jest"
   },
   "keywords": [
     "React",
