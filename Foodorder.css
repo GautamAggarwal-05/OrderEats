@@ -159,10 +159,6 @@ html, body {
     object-fit: cover;
 }
 
-/* Search and Filter Styles */
-.Search {
-    padding: 20px;
-}
 
 .res-container {
     display: flex;
@@ -254,6 +250,14 @@ html, body {
     padding: 11px;
 }
 
+/* Search and Filter Styles */
+.search {
+    padding: 20px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align the items from the left */
+}
+
 .search-box {
     padding: 11px 15px; /* Increased padding for better visual balance */
     font-size: 16px; /* Increased font size for better readability */
@@ -262,26 +266,23 @@ html, body {
     background-color: #F5F5DC; /* Light beige background */
     color: #343333; /* Darker text color */
     width: 200px; /* Adjust width as needed */
+    margin-right: 10px; /* Space between input box and button */
 }
 
 .search-btn {
-    /* padding: 9px 15px; */
-    width: 10px;
-    height: 10px;
-    outline: none;
+    padding: 9px 15px; /* Adjust padding for the button */
     cursor: pointer;
     border: none; /* Remove border for cleaner appearance */
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 50%; /* Make the button round */
     background-color: #F5F5DC;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
-    position: absolute;
-    top: 49%;
-    left: 80%;
 }
 
 .search-btn:hover {
     background-color: #f4f4a0; /* Darker shade on hover */
 }
+
+
 
 /* Shimmer Container */
 .shimmer-conatiner{
