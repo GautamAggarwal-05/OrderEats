@@ -30,7 +30,6 @@ const Body = ()=>{
     if(listofResturant.length === 0){
       return <Shimmer />;
     }
-    console.log("Body renderd called")
 
     const handleSearchChange = (e) => {
       const value = e.target.value; // Get the current value

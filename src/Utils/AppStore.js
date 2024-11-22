@@ -20,7 +20,7 @@ const AppStore = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: ['REGISTER'],  // Add your custom actions if needed
+        serializableCheck: false,
       },
     }),
 });

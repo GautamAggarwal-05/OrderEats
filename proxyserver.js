@@ -17,12 +17,12 @@ app.use('/api', createProxyMiddleware({
     proxyReq.setHeader('Accept', 'application/json');
   },
   onError: (err, req, res) => {
-    console.error('Proxy Error:', err);
+    // console.error('Proxy Error:', err);
     res.status(500).send('Proxy Error');
   },
   logLevel: 'debug',
 }));
 
 app.listen(5000, () => {
-  console.log('Proxy server is running on port 5000');
+  // console.log('Proxy server is running on port 5000');
 });

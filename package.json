@@ -7,7 +7,7 @@
     "build": "parcel build FoodOrdering.html",
     "test": "jest",
     "server": "nodemon proxyserver.js",
-    "dev":"concurrently \"npm run server\" \"npm run start\""
+    "dev": "concurrently \"npm run server\" \"npm run start\""
   },
   "keywords": [
     "React",
@@ -29,6 +29,7 @@
     "axios": "^1.7.7",
     "concurrently": "^9.1.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "http-proxy-middleware": "^3.0.0",
     "nodemon": "^3.1.7",

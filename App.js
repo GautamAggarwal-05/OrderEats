@@ -12,7 +12,7 @@ const heading=React.createElement('h1',{id:"head",xyz:"abc"},"Hello from React J
     //to put this h1 on our browser use ReactDOM by creating a root
     //Root is created
 
-    console.log(heading)//object
+    // console.log(heading)//object
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(heading); //take the object conver it into a tag and put it in root div(DOM)
@@ -35,7 +35,7 @@ React.createElement("div",
 {id:"child"},
 React.createElement("h1",{},"I'm h1 tag")))
 
-console.log(parent)//object
+// console.log(parent)//object
 const a = ReactDOM.createRoot(document.getElementById("nesting"))
 a.render(parent)
 
@@ -56,7 +56,7 @@ React.createElement("div",
 {id:"child1"},
 [React.createElement("h1",{},"I'm sibling1 "),React.createElement("h2",{},"I'm sibling2")]))
 
-console.log(parent1)//object
+// console.log(parent1)//object
 const b = ReactDOM.createRoot(document.getElementById("sibling"))
 b.render(parent1)
 
@@ -81,6 +81,6 @@ const parent2=React.createElement("div",
 {id:"child1"},
 [React.createElement("h1",{},"I'm mess1 "),React.createElement("h2",{},"I'm mess2")])]
 )
-console.log(parent2)//object
+// console.log(parent2)//object
 const c = ReactDOM.createRoot(document.getElementById("mess"))
 c.render(parent2)

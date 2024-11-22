@@ -6,16 +6,16 @@ import { useSelector } from "react-redux";
 // click->login button whole header render again
 const Header = ()=>{
     const [Reactbtn,setReactbtn] = useState("Log in"); //state variable
-    console.log("Header Render");
+    // console.log("Header Render");
     //if no dependency array => useEffect is called on every render
     // if dependency array is empty [] => useEffect is called on inital render (just once)
     // if dependency array is [Reactbtn] => called everytime btnName React is updated
     useEffect(()=>{
-        console.log("useEffect render");
+        // console.log("useEffect render");
     },[Reactbtn])
 
     const cartItems = useSelector((store)=>store.cart.items)
-    console.log(cartItems);
+    // console.log(cartItems);
     return (
         <div className="header">
             <div className="logo-container">

@@ -46,7 +46,7 @@ const number= 10000
 const HeadingComponent3 = function() {
     return(<div id="container">
         {number}
-        <h1>{console.log("Js inside React Component")}</h1>
+        {/* <h1>{console.log("Js inside React Component")}</h1> */}
       <h1 id="heading3">heading written by Functional Component</h1>
     </div>)
 };
