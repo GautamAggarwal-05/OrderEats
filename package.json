@@ -6,7 +6,7 @@
     "start": "parcel  FoodOrdering.html",
     "build": "parcel build FoodOrdering.html",
     "test": "jest",
-    "server": "nodemon proxyserver.js",
+    "server": "nodemon Backend/proxyserver.js",
     "dev": "concurrently \"npm run server\" \"npm run start\""
   },
   "keywords": [
