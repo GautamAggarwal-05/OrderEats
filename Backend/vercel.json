@@ -1,17 +1,24 @@
 {
-    "installCommand" : "npm install --legacy-peer-deps",
-    "version":2,
-    "builds":[
+    "installCommand": "npm install --legacy-peer-deps",
+    "version": 2,
+    "builds": [
         {
-            "src":"proxyserver.js",
-            "use":"@vercel/node"
+            "src": "Backend/proxyserver.js",
+            "use": "@vercel/node"
         },
         {
-            "src":"src/**/*",
-            "use":"@vercel/static"
+            "src": "src/**/*",
+            "use": "@vercel/static"
         }
     ],
-    "routs":[
-        {"src":"/(.*)","dest" :"/"}
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "Backend/proxyserver.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/FoodOrdering.html"
+        }
     ]
 }
