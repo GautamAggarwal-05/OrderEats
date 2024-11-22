@@ -9,7 +9,6 @@ import uselistofResturant from "../Utils/uselistofResturants.js";
 //not using keys(not acceptable)<<<index as key <<< unique id
 let API_DATA = [] 
 const Body = ()=>{
-
     //State Variable
     // This is just array destructuring
     // const arr= useState(resList)
@@ -58,10 +57,10 @@ const Body = ()=>{
     return (
         <div className="body">
 
-        <div id="panel-container">
+        <div id="panel-container">  
             <div id="panelword">
-              <h1>You have a bad Day.</h1>
-              <h1>Just eat good food</h1>
+            <h1 className="title">Having a Tough Day?</h1>
+            <h2 className="subtitle">Treat Yourself to Some Delicious Food!</h2>
             </div>
             <div id="pimg">
                     <img className="panel-img" src = "https://tse2.mm.bing.net/th?id=OIP.x9E1N5-6UJve5OB8KgLxbwHaFj&pid=Api&P=0&h=180"/>

@@ -100,6 +100,26 @@ html, body {
     height: 7.2vh;
 }
 
+/* Styling the Header Section */
+.title {
+    font-size: 3rem; /* Large text for emphasis */
+    font-weight: bold;
+    color: #2c3e50; /* Darker shade for good contrast */
+    text-align: center;
+    margin-top: 2rem; /* Space from the top */
+    margin-bottom: 0.5rem; /* Space between title and subtitle */
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  }
+  
+  .subtitle {
+    font-size: 1.8rem; /* Slightly smaller than the title */
+    font-weight: 500;
+    color: #F97316; /* Soothing green tone for positivity */
+    text-align: center;
+    margin-bottom: 2rem; /* Space after subtitle */
+    font-family: 'Poppins', sans-serif;
+  }
+
 /* Panel Styles */
 #panel-container {
     display: flex;

@@ -8,10 +8,12 @@ import Contact from "./Components/Contact";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/ResturantMenu";
 import { Provider } from "react-redux";
-import AppStore from "./Utils/AppStore";
+import {AppStore,persistor} from "./Utils/AppStore";
 import Cart from "./Components/Cart";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./Components/Footer";
+import { PersistGate } from "redux-persist/integration/react"; // Import PersistGate
 //chunking
 //code spliting
 // Dynamic Bundling
@@ -26,13 +28,16 @@ const AppLayout = ()=>{
         // Redux 
     <Provider store={AppStore}>  
         {/* <UserContext.Provider></UserContext.Provider> context API */}
-    <div className="App">
-        
-        <Header/>
-        {/* <Body/> */}
-        <Outlet/>
-        <ToastContainer /> {/* Toaste notifications */}
-    </div>
+        <PersistGate loading={null} persistor={persistor}>
+        <div className="App">
+            
+            <Header/>
+            {/* <Body/> */}
+            <Outlet/>
+            <ToastContainer /> {/* Toaste notifications */}
+            <Footer/>
+        </div>
+        </PersistGate>
     </Provider>
     );
 }

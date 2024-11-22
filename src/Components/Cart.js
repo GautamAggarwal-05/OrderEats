@@ -23,11 +23,17 @@ const Cart = () => {
 
   return (
     <div className="flex gap-10 bg-[#E8E4C9] mt-5">
-      <div className="w-full max-w-3xl p-6 bg-white text-center rounded-lg shadow-lg ml-[15%]">
+      <div className="w-full max-w-3xl p-6 bg-gray-100 text-center rounded-lg shadow-lg mx-auto ">
         <h1 className="font-bold text-3xl mb-4">Your Cart</h1>
         {cartItems.length === 0 ? (
-          <p className="mt-6 text-xl font-semibold">No items in the cart.</p>
-        ) : (
+            <div >
+            <img
+              src="https://cdn.dribbble.com/users/602333/screenshots/6305886/empty-cart.png"
+              alt="Empty Cart"
+              className="w-1/2 mx-auto mt-4 rounded-lg"
+            />
+          </div>
+        ) : (  
           <div>
             <button
               className="px-4 py-2 bg-red-500 text-white rounded-lg mt-2 hover:bg-red-700 transition duration-300"
